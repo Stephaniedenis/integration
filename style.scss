@@ -1,0 +1,60 @@
+$primary: white;
+$secondary: black;
+
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+header{
+    font-family: "Titre";
+    h1{
+        font-weight: bold; 
+        background-color: rgb(51, 53, 56) ; 
+        border:2px solid rgb(242, 132, 14) ;
+        border-radius: 100%;
+    }
+}
+.navbar{
+
+    background-color: rgb(51, 53, 56);
+    font-family: "Titre";
+    font-size: 25px;
+    button{
+        color: rgb(242, 132, 14);
+    }
+    
+}
+
+
+nav{
+ @extend .bg-secondary;
+
+ a{
+     font-family: "Titre";
+     font-size: 25px;
+        
+     &:hover{
+         background-color:rgb(242, 132, 14) ;
+         border: 2px solid white;
+         border-radius: 15px;
+
+     }
+    }
+ }
+ 
+ aside{
+     background-color: rgb(242, 132, 14);
+     p{
+         @extend .text-primary;
+         @extend .mt-5;
+         font-size: 25px;
+         
+     }
+ }
+ .modal{
+     .modal-body{
+         @extend .bg-secondary;
+     }
+ }
+ @font-face {
+    font-family: "Titre";
+    src: url(img/Englebert-Regular.ttf); 
+}
