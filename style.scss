@@ -1,5 +1,5 @@
 $primary: white;
-$secondary: black;
+$secondary: rgb(51, 53, 56);
 
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
@@ -7,14 +7,14 @@ header{
     font-family: "Titre";
     h1{
         font-weight: bold; 
-        background-color: rgb(51, 53, 56) ; 
+        background-color: $secondary ; 
         border:2px solid rgb(242, 132, 14) ;
         border-radius: 100%;
     }
 }
 .navbar{
 
-    background-color: rgb(51, 53, 56);
+    background-color: $secondary;
     font-family: "Titre";
     font-size: 25px;
     button{
@@ -27,18 +27,23 @@ header{
 nav{
  @extend .bg-secondary;
 
- a{
-     font-family: "Titre";
-     font-size: 25px;
-        
-     &:hover{
-         background-color:rgb(242, 132, 14) ;
-         border: 2px solid white;
-         border-radius: 15px;
+}
+a{
+    font-family: "Titre";
+    font-size: 25px;
+       
+    &:hover{
+        background-color:rgb(242, 132, 14) ;
+        border: 2px solid white;
+        border-radius: 15px;
 
-     }
-    }
- }
+    }      
+}
+
+.active{
+   background-color: rgb(242, 132, 14);
+   border-radius: 15px;
+}
  
  aside{
      background-color: rgb(242, 132, 14);

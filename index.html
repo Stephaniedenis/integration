@@ -8,11 +8,11 @@
     <link href="style.css" rel="stylesheet">
     <title>Accueil</title>
 </head>
-<p class="visually-hidden h2 ">Histoire du refuge</p>
-<a class="visually-hidden-focusable" href="histoire.html">Allez à l'histoire du refuge</a>
+<p class="visually-hidden h2">Histoire du refuge</p>
+<a class="visually-hidden-focusable bg-secondary" href="histoire.html">Allez à l'histoire du refuge</a>
 <div class="visually-hidden-focusable">un conteneur avec un  <a href="#">focus sur l'élément</a>.</div>
     <a class="visually-hidden visually-hidden-focusable" href="histoire.html">Sauter à l'histoire du Refuge</a>
-    <div>
+<div>
 <body>
  
     <header>
@@ -28,19 +28,23 @@
         </div>
         <div class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Navigation">
+              <span class="navbar-toggler-icon primary"></span>
             </button>
-            <div class="collapse navbar-collapse  " id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                  <a class="nav-link active " aria-current="page" href="#">Partage</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Connexion</a>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse  " id="navbarToggler">
+              <div class="navbar-nav me-auto mb-2 mb-lg-0">  
+               <p class="text-primary">Sara Morocco</p>
+              </div>
               <form class="d-flex">
+                <div class="collapse navbar-collapse  " id="navbarToggler">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                      <a class="nav-link " href="#">Partage</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Connexion</a>
+                    </li>
+                  </ul>
                 <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="recherche">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -80,7 +84,7 @@
                     <a class="nav-link" href="adoption.html">Formulaire d'adoption</a>
                   </nav>
             </nav>
-            <section class="col-5">
+            <section class="col-md-5 col-10" >
                 <div id="carouselchiens" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselchiens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="photo 1"></button>
