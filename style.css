@@ -8855,7 +8855,7 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-secondary, nav, .modal .modal-body {
+.bg-secondary, nav, .modal .modal-body, .filariane {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11994,12 +11994,22 @@ a:hover {
   border-radius: 15px;
 }
 
+section {
+  margin-right: -.5%;
+}
+
 aside {
   background-color: #f2840e;
 }
 
 aside p {
   font-size: 25px;
+  text-align: justify;
+}
+
+.filariane a {
+  text-decoration: none;
+  margin-top: 2px;
 }
 
 @font-face {

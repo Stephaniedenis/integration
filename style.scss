@@ -44,13 +44,17 @@ a{
    background-color: rgb(242, 132, 14);
    border-radius: 15px;
 }
- 
+ section{
+    margin-right: -.5%;
+ }
  aside{
+    
      background-color: rgb(242, 132, 14);
      p{
          @extend .text-primary;
          @extend .mt-5;
          font-size: 25px;
+         text-align: justify
          
      }
  }
@@ -58,6 +62,15 @@ a{
      .modal-body{
          @extend .bg-secondary;
      }
+ }
+ .filariane{
+     @extend .bg-secondary;
+    
+     a{
+     text-decoration: none;
+     margin-top: 2px;
+   
+    }
  }
  @font-face {
     font-family: "Titre";
