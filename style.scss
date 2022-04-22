@@ -72,6 +72,24 @@ a{
    
     }
  }
+ .bgcolor{
+     background-color:rgb(242, 132, 14) ;
+      .card{
+        height: 100%;
+        background-color: $secondary;
+        p{
+            color: white;
+            text-align: justify;
+        }
+        a{
+            color: rgb(242, 132, 14);
+            &:hover{
+                background-color: $primary;
+            }
+        }
+      }
+ }
+
  @font-face {
     font-family: "Titre";
     src: url(img/Englebert-Regular.ttf); 

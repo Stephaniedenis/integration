@@ -12012,6 +12012,28 @@ aside p {
   margin-top: 2px;
 }
 
+.bgcolor {
+  background-color: #f2840e;
+}
+
+.bgcolor .card {
+  height: 100%;
+  background-color: #333538;
+}
+
+.bgcolor .card p {
+  color: white;
+  text-align: justify;
+}
+
+.bgcolor .card a {
+  color: #f2840e;
+}
+
+.bgcolor .card a:hover {
+  background-color: white;
+}
+
 @font-face {
   font-family: "Titre";
   src: url(img/Englebert-Regular.ttf);
