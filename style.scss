@@ -1,6 +1,6 @@
 $primary: white;
 $secondary: rgb(51, 53, 56);
-
+$success: rgb(242, 132, 14);
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 header{
@@ -8,7 +8,7 @@ header{
     h1{
         font-weight: bold; 
         background-color: $secondary ; 
-        border:2px solid rgb(242, 132, 14) ;
+        border:2px solid $success ;
         border-radius: 100%;
     }
 }
@@ -18,7 +18,7 @@ header{
     font-family: "Titre";
     font-size: 25px;
     button{
-        color: rgb(242, 132, 14);
+        color: $success;
     }
     
 }
@@ -33,7 +33,7 @@ a{
     font-size: 25px;
        
     &:hover{
-        background-color:rgb(242, 132, 14) ;
+        background-color:$success ;
         border: 2px solid white;
         border-radius: 15px;
 
@@ -41,7 +41,7 @@ a{
 }
 
 .active{
-   background-color: rgb(242, 132, 14);
+   background-color: $success;
    border-radius: 15px;
 }
  section{
@@ -49,7 +49,7 @@ a{
  }
  aside{
     
-     background-color: rgb(242, 132, 14);
+     background-color:$success;
      p{
          @extend .text-primary;
          @extend .mt-5;
@@ -69,11 +69,10 @@ a{
      a{
      text-decoration: none;
      margin-top: 2px;
-   
     }
  }
  .bgcolor{
-     background-color:rgb(242, 132, 14) ;
+     background-color:$success ;
       .card{
         height: 100%;
         background-color: $secondary;
@@ -82,13 +81,36 @@ a{
             text-align: justify;
         }
         a{
-            color: rgb(242, 132, 14);
+            color: $success;
             &:hover{
                 background-color: $primary;
             }
         }
       }
  }
+ .table{
+     margin-top: 15px;
+     text-align: center;
+     height: 400px;
+    thead{
+      font-family: "Titre";
+      font-size: 25px;
+      color: $primary
+  }
+  .rayure{
+     background-color: $success;
+  }
+ }
+ .alert{
+     border: 5px solid $success;
+     border-radius: 15px;
+     a{
+         color: $success;
+         &:hover{
+             background-color: $secondary;
+         }
+     }
+}
 
  @font-face {
     font-family: "Titre";
