@@ -111,7 +111,29 @@ a{
          }
      }
 }
+form{
 
+
+.btnformulaire{
+    margin-top: 35px;
+    text-align: center;
+    .btn{
+        color: $success;
+        border-radius: 15px;
+        &:hover{
+            background-color: $success;
+            color: $secondary;
+        }
+
+    }
+}
+
+legend{
+    font-family: "Titre";
+    color: $primary;
+    font-size: 25px;
+}
+}
 
  @font-face {
     font-family: "Titre";

@@ -12063,6 +12063,27 @@ aside p {
   background-color: #333538;
 }
 
+form .btnformulaire {
+  margin-top: 35px;
+  text-align: center;
+}
+
+form .btnformulaire .btn {
+  color: #f2840e;
+  border-radius: 15px;
+}
+
+form .btnformulaire .btn:hover {
+  background-color: #f2840e;
+  color: #333538;
+}
+
+form legend {
+  font-family: "Titre";
+  color: white;
+  font-size: 25px;
+}
+
 @font-face {
   font-family: "Titre";
   src: url(img/Englebert-Regular.ttf);

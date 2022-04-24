@@ -83,86 +83,104 @@
           </div>
         </div>
         </header>
-        <main class="row">
+        <main class="row bg-success">
             <nav class="nav flex-column col-2">
                     <a class="nav-link " aria-current="Accueil" href="index.html">Accueil</a>
                     <a class="nav-link" href="histoire.html">Histoire du Refuge</a>
                     <a class="nav-link" href="chiensadoptés.html">Chiens Adoptés</a>
                     <a class="nav-link" href="informations.html">Informations des chiens adoptés</a>
-                    <a class="nav-link active" aria-current="Formulaire d'adoption" >Formulaire d'adoption</a>
-                  </nav>
+                    <a class="nav-link active" aria-current="Formulaire d'adoption" >Formulaire d'adoption</a>   
             </nav>
-            <section class="col-md-4 col-10" >
-                <form  action="post" >
-                    <div class="form-group ">
-                      <label for="formulaireNom">Votre Nom</label>
-                      <input type="text" class="form-control" id="formulaireNom" placeholder="Nom">
-                    </div>
-                    <div class="form-group">
-                      <label for="formulaireEmail">Votre Email</label>
-                      <input type="email" class="form-control" id="formulaireEmail" placeholder="Email">
-                    </div>
-                    <div class="btn-group mt-2"> 
-                        <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked />
-                        <label class="btn btn-secondary" for="option1">Mâle</label>
-                      
-                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
-                        <label class="btn btn-secondary" for="option2">Femelle</label>
-                    </div>
-                    <div>
-                      <label for="choixcouleur" class="form-label">Choix de couleur du collier</label>
-                      <input type="color" class="form-control form-control-color" id="choixcouleur" value="#563d7c" title="Choisissez votre couleur">
-                    </div>
-                    <div class="form-group">
-                      <label for="texte">Commentaire</label>
-                      <textarea class="form-control" id="texte" rows="3"></textarea>
-                    </div>
-                      <label class="form-label" for="file">Insérer une lettre sur vous</label>
-                      <input type="file" class="form-control mb-5" id="file" />
-                  </form>
-                </section>
-                    <form class="col-md-4">
-                      <h2 class="text-center">Caractéristiques du chien</h2>
+           
+      <div class="row col-sm-8">
+       <section class="row col-md-8">
+         <form method="post" action="">
+           <div class="container">
+            <h2 class="text-center">Formulaire d'adoption</h2>
+              <fieldset class="border p-2">
+                <legend class="w-">Prêt pour l'adoption</legend>
+
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" class="form-control" id="nom">
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Adresse</label>
+                  <input type="text" class="form-control" id="address">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <p class="h5">Sexe du chien</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="boutonacocher" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Mâle
+                  </label>
+                </div>
+                <div class="form-check">
+                  
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Femêle
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label for="selection">Poids</label>
+                  <select id="selection" class="form-control">
+                    <option value="">Choisir entre les poids</option>
+                    <optgroup label="Groupe de poids">
+                      <option value="">Plus petit que 10 lbs</option>
+                      <option value="">10-25 lbs</option>
+                      <option value="">25 lbs et plus</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="row col-sm-4">
+              <fieldset class="border p-2">
+               <legend class="w-">Caractéristiques</legend>
                   <div class=" form-group mb-6">
-                    <div class="text-center">
+                    <div>
                       <label for="taille">
                         Taille
                       </label>
-                      <input type="range" class="form-control-range w-50" id="taille" min="20" max="100" value="50"
+                      <input type="range" class="form-control-range" id="taille" min="20" max="100" value="50"
                         onInput="this.nextElementSibling.innerHTML=this.value">
                       <span id="tailleOutput">50</span> cm
                     </div>
-                    <div class="text-center">
+                    <div>
                       <label for="poids">
                         Poids
                       </label>
-                      <input type="range" class="form-control-range w-50" id="poids" min="1" max="155" value="5"
+                      <input type="range" class="form-control-range" id="poids" min="1" max="155" value="5"
                         onInput="this.nextElementSibling.innerHTML=this.value">
                       <span id="poidsOutput">5</span> kg
                     </div>
-                    <div class="text-center">
+                    <div>
                       <label for="age">
                         Age
                       </label>
-                      <input type="range" class="form-control-range w-50" id="age" min="0" max="20" value="2"
+                      <input type="range" class="form-control-range" id="age" min="0" max="20" value="2"
                         onInput="this.nextElementSibling.innerHTML=this.value">
                       <span id="ageOutput">2</span> ans
                     </div>
                   </div>
-                  <div class="text-center">
-                  <input class="btn btn-success " type="submit" value="Soumettre">
-                  <input class="btn btn-success" type="reset" value="Réinitialiser">
-                  <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                  </svg></button>
                 </div>
-                </form>
-            <aside class="col-md-2 col-12">
+              </fieldset>
+            </div>
+          </form>
+        </section>
+      </div>
+      <aside class="col-2">
               <figure class="figure">
                 <img src="img/275014345_4856525314401844_4983802449311882566_n.jpg" class="figure-img img-fluid rounded" alt="chien adoption">
                 <figcaption class="figure-caption">Chien en Adoption</figcaption>
               </figure>
-            </aside>
+       </aside>
         </main>
  
     <footer class="bg-dark text-center text-white">
