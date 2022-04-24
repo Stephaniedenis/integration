@@ -5166,7 +5166,7 @@ fieldset:disabled .btn {
   margin-bottom: 0;
 }
 
-.card-link + .card-link {
+.card-link + .card-link, .card-infolink + .card-link, .card-link + .card-infolink, .card-infolink + .card-infolink {
   margin-left: 1rem;
 }
 
@@ -8495,7 +8495,7 @@ fieldset:disabled .btn {
   padding-left: 0.5rem !important;
 }
 
-.px-3 {
+.px-3, .card-infolink {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -8860,7 +8860,7 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-success {
+.bg-success, .card-infolink {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -11957,10 +11957,6 @@ fieldset:disabled .btn {
   }
 }
 
-header {
-  font-family: "Titre";
-}
-
 header h1, header .h1 {
   font-weight: bold;
   background-color: #333538;
@@ -11968,10 +11964,13 @@ header h1, header .h1 {
   border-radius: 100%;
 }
 
+body {
+  font-family: "Titre";
+  font-size: 1.2rem;
+}
+
 .navbar {
   background-color: #333538;
-  font-family: "Titre";
-  font-size: 25px;
 }
 
 .navbar button {
@@ -11979,8 +11978,6 @@ header h1, header .h1 {
 }
 
 a {
-  font-family: "Titre";
-  font-size: 25px;
   border-radius: 15px;
 }
 
@@ -12002,7 +11999,6 @@ aside {
 }
 
 aside p {
-  font-size: 25px;
   text-align: justify;
 }
 
@@ -12040,8 +12036,6 @@ aside p {
 }
 
 .table thead {
-  font-family: "Titre";
-  font-size: 25px;
   color: white;
 }
 
@@ -12060,6 +12054,11 @@ aside p {
 
 .alert a:hover {
   background-color: #333538;
+}
+
+.card-description {
+  font-size: 0.8em;
+  height: 7.5em;
 }
 
 @font-face {

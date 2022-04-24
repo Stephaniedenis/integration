@@ -1,10 +1,12 @@
 $primary: white;
 $secondary: rgb(51, 53, 56);
 $success: rgb(242, 132, 14);
+$fontsize: 1.2rem;
+$borderradius: 15px;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 header{
-    font-family: "Titre";
+    // font-family: "Titre";
     h1{
         font-weight: bold; 
         background-color: $secondary ; 
@@ -12,11 +14,15 @@ header{
         border-radius: 100%;
     }
 }
+body {
+    font-family: "Titre";
+    font-size: $fontsize;
+}
 .navbar{
 
     background-color: $secondary;
-    font-family: "Titre";
-    font-size: 25px;
+    // font-family: "Titre";
+    // font-size: $fontsize;
     button{
         color: $success;
     }
@@ -29,9 +35,9 @@ nav{
 
 }
 a{
-    font-family: "Titre";
-    font-size: 25px;
-    border-radius: 15px;
+    // font-family: "Titre";
+    // font-size: $fontsize;
+    border-radius: $borderradius;
        
     &:hover{
         background-color:$success ;
@@ -41,7 +47,7 @@ a{
 
 .active{
    background-color: $success;
-   border-radius: 15px;
+   border-radius: $borderradius;
 }
 main {
     background-color:$success;
@@ -53,7 +59,7 @@ main {
      p{
          @extend .text-primary;
          @extend .mt-5;
-         font-size: 25px;
+        //  font-size: $fontsize;
          text-align: justify
          
      }
@@ -93,8 +99,8 @@ main {
      text-align: center;
      height: 400px;
     thead{
-      font-family: "Titre";
-      font-size: 25px;
+    //   font-family: "Titre";
+    //   font-size: $fontsize;
       color: $primary
   }
   .rayure{
@@ -103,7 +109,7 @@ main {
  }
  .alert{
      border: 5px solid $success;
-     border-radius: 15px;
+     border-radius: $borderradius;
      a{
          color: $success;
          &:hover{
@@ -112,8 +118,22 @@ main {
      }
 }
 
+.card-description{
+    font-size: 0.8em;
+    height: 7.5em;
+}
 
- @font-face {
+.card-infolink {
+    @extend .card-link, .bg-success, .px-3;    
+}
+
+// ol {
+//     li{
+//         font-size: $fontsize;
+//     }
+// }
+
+@font-face {
     font-family: "Titre";
     src: url(img/Englebert-Regular.ttf); 
 }
