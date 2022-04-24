@@ -11981,17 +11981,20 @@ header h1, header .h1 {
 a {
   font-family: "Titre";
   font-size: 25px;
+  border-radius: 15px;
 }
 
 a:hover {
   background-color: #f2840e;
-  border: 2px solid white;
-  border-radius: 15px;
 }
 
 .active {
   background-color: #f2840e;
   border-radius: 15px;
+}
+
+main {
+  background-color: #f2840e;
 }
 
 section {
