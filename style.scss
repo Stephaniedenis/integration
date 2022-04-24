@@ -1,6 +1,6 @@
 $primary: white;
 $secondary: rgb(51, 53, 56);
-$success: rgb(242, 132, 14);
+$success: darken(rgb(242, 132, 14),14%);
 $fontsize: 1.2rem;
 $borderradius: 15px;
 
@@ -148,13 +148,6 @@ main {
     @include fade-in('500ms');
 }
 
-
-
-// ol {
-//     li{
-//         font-size: $fontsize;
-//     }
-// }
 form{
 legend{
     color: $primary; 
@@ -167,7 +160,17 @@ legend{
  }
 }
 
+.footer-colors {
+    @extend .p-3, .mb-2, .bg-dark, .text-white;
+    font-size: 1.2em;
+    figcaption {
+        color:lighten($success, $amount: 25%)
+    }
+}
+
 @font-face {
     font-family: "Titre";
+    font-style: Tahoma, sans-serif;
     src: url(img/Englebert-Regular.ttf); 
+    font-display: swap;
 }
