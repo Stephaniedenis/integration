@@ -128,6 +128,28 @@ main {
     @extend .card-link, .bg-success, .px-3, .stretched-link;    
 }
 
+@mixin fade-in($waitTime) {
+    animation: 
+        wait #{$waitTime},
+        fade-in 800ms #{$waitTime};
+}
+
+@keyframes wait {
+    0% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.card {
+    @include fade-in('500ms');
+}
+
+
+
 // ol {
 //     li{
 //         font-size: $fontsize;

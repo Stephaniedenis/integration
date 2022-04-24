@@ -12061,6 +12061,47 @@ aside p {
   height: 7.5em;
 }
 
+@-webkit-keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  -webkit-animation: wait 500ms, fade-in 800ms 500ms;
+          animation: wait 500ms, fade-in 800ms 500ms;
+}
+
 form legend {
   color: white;
   border-bottom: 2px solid white;
