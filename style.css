@@ -12061,6 +12061,15 @@ aside p {
   height: 7.5em;
 }
 
+form legend {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+form .btn:hover {
+  background-color: #f2840e;
+}
+
 @font-face {
   font-family: "Titre";
   src: url(img/Englebert-Regular.ttf);

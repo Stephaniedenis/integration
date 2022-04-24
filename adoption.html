@@ -83,8 +83,8 @@
           </div>
         </div>
         </header>
-        <main class="row">
-            <nav class="nav flex-column col-2">
+        <main class="g-0 row">
+          <nav class="nav col-sm-3 flex-column">
                     <a class="nav-link " aria-current="Accueil" href="index.html">Accueil</a>
                     <a class="nav-link" href="histoire.html">Histoire du Refuge</a>
                     <a class="nav-link" href="chiensadoptés.html">Chiens Adoptés</a>
@@ -92,8 +92,11 @@
                     <a class="nav-link active" aria-current="Formulaire d'adoption" >Formulaire d'adoption</a>
                   </nav>
             </nav>
-            <section class="col-md-4 col-10" >
-                <form  action="post" >
+            <div class="g-0 col-sm-6 row">
+              <section class="g-0 col-md">
+                <form  method="post" action="https://philippefleury.com/backend.php">
+                  <fieldset class="border p-2">
+                    <legend class="w-auto">Formulaire d'adoption</legend>
                     <div class="form-group ">
                       <label for="formulaireNom">Votre Nom</label>
                       <input type="text" class="form-control" id="formulaireNom" placeholder="Nom">
@@ -102,7 +105,8 @@
                       <label for="formulaireEmail">Votre Email</label>
                       <input type="email" class="form-control" id="formulaireEmail" placeholder="Email">
                     </div>
-                    <div class="btn-group mt-2"> 
+                    <p class="h5 mt-3">Sexe du chien</p>
+                    <div class="btn-group mt-3 mb-3">
                         <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked />
                         <label class="btn btn-secondary" for="option1">Mâle</label>
                       
@@ -119,10 +123,9 @@
                     </div>
                       <label class="form-label" for="file">Insérer une lettre sur vous</label>
                       <input type="file" class="form-control mb-5" id="file" />
-                  </form>
-                </section>
-                    <form class="col-md-4">
-                      <h2 class="text-center">Caractéristiques du chien</h2>
+                    </fieldset>
+                    <fieldset class="border p-2">
+                    <legend class="w-auto">Caractéristiques du chien</legend>
                   <div class=" form-group mb-6">
                     <div class="text-center">
                       <label for="taille">
@@ -150,14 +153,16 @@
                     </div>
                   </div>
                   <div class="text-center">
-                  <input class="btn btn-success " type="submit" value="Soumettre">
-                  <input class="btn btn-success" type="reset" value="Réinitialiser">
+                  <input class="btn btn-primary " type="submit" value="Soumettre">
+                  <input class="btn btn-primary" type="reset" value="Réinitialiser">
                   <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                   </svg></button>
-                </div>
+                </fieldset>
                 </form>
-            <aside class="col-md-2 col-12">
+               </section>
+              </div>
+              <aside class="g-0 col-3">
               <figure class="figure">
                 <img src="img/275014345_4856525314401844_4983802449311882566_n.jpg" class="figure-img img-fluid rounded" alt="chien adoption">
                 <figcaption class="figure-caption">Chien en Adoption</figcaption>

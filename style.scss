@@ -132,6 +132,17 @@ main {
 //         font-size: $fontsize;
 //     }
 // }
+form{
+legend{
+    color: $primary; 
+    border-bottom: 2px solid $primary;   
+}
+ .btn{
+     &:hover{
+         background-color: $success;
+     }
+ }
+}
 
 @font-face {
     font-family: "Titre";
