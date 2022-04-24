@@ -6,7 +6,6 @@ $borderradius: 15px;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 header{
-    // font-family: "Titre";
     h1{
         font-weight: bold; 
         background-color: $secondary ; 
@@ -21,8 +20,6 @@ body {
 .navbar{
 
     background-color: $secondary;
-    // font-family: "Titre";
-    // font-size: $fontsize;
     button{
         color: $success;
     }
@@ -35,8 +32,6 @@ nav{
 
 }
 a{
-    // font-family: "Titre";
-    // font-size: $fontsize;
     border-radius: $borderradius;
        
     &:hover{
@@ -59,7 +54,6 @@ main {
      p{
          @extend .text-primary;
          @extend .mt-5;
-        //  font-size: $fontsize;
          text-align: justify
          
      }
