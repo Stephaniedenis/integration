@@ -5162,7 +5162,7 @@ fieldset:disabled .btn {
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text:last-child, .card-description:last-child {
   margin-bottom: 0;
 }
 
@@ -7567,7 +7567,7 @@ fieldset:disabled .btn {
   border: 0 !important;
 }
 
-.stretched-link::after {
+.stretched-link::after, .card-infolink::after {
   position: absolute;
   top: 0;
   right: 0;

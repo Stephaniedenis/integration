@@ -119,12 +119,13 @@ main {
 }
 
 .card-description{
+    @extend .card-text;
     font-size: 0.8em;
     height: 7.5em;
 }
 
 .card-infolink {
-    @extend .card-link, .bg-success, .px-3;    
+    @extend .card-link, .bg-success, .px-3, .stretched-link;    
 }
 
 // ol {
