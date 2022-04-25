@@ -7695,7 +7695,7 @@ fieldset:disabled .btn {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .banniere {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -8082,7 +8082,7 @@ fieldset:disabled .btn {
           justify-content: flex-end !important;
 }
 
-.justify-content-center {
+.justify-content-center, .banniere {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
@@ -8117,7 +8117,7 @@ fieldset:disabled .btn {
           align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .banniere {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -8408,7 +8408,7 @@ fieldset:disabled .btn {
   margin-bottom: 0.25rem !important;
 }
 
-.mb-2, .footer-colors {
+.mb-2 {
   margin-bottom: 0.5rem !important;
 }
 
@@ -8472,7 +8472,7 @@ fieldset:disabled .btn {
   padding: 1rem !important;
 }
 
-.p-4 {
+.p-4, .banniere {
   padding: 1.5rem !important;
 }
 
@@ -8716,7 +8716,7 @@ fieldset:disabled .btn {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .banniere {
   text-align: center !important;
 }
 
@@ -11958,10 +11958,10 @@ fieldset:disabled .btn {
 }
 
 header h1, header .h1 {
-  font-weight: bold;
   background-color: #333538;
-  border: 2px solid #f2840e;
+  border: 0.08em solid #f2840e;
   border-radius: 100%;
+  margin: 0;
 }
 
 body {
@@ -12121,6 +12121,13 @@ form .btn:hover {
 
 .footer-colors figcaption {
   color: #f9c287;
+}
+
+.banniere {
+  background-color: #af5f09;
+  background-image: url(img/maroc21.png);
+  width: 100%;
+  height: auto;
 }
 
 @font-face {

@@ -8,10 +8,10 @@ $borderradius: 15px;
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 header{
     h1{
-        font-weight: bold; 
         background-color: $secondary ; 
-        border:2px solid $success ;
+        border:0.08em solid $success ;
         border-radius: 100%;
+        margin: 0;
     }
 }
 body {
@@ -160,11 +160,20 @@ legend{
 }
 
 .footer-colors {
-    @extend .p-3, .mb-2, .bg-dark, .text-white;
+    @extend .p-3, .bg-dark, .text-white;
     font-size: 1.2em;
     figcaption {
         color:lighten($success, $amount: 25%)
     }
+}
+
+.banniere {
+    @extend .p-4, .text-center;
+    @extend .d-flex, .justify-content-center, .align-items-center;
+    background-color: darken($success,14%);
+    background-image: url(img/maroc21.png);
+    width: 100%;
+    height: auto;
 }
 
 @font-face {
