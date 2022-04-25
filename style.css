@@ -11979,6 +11979,8 @@ body {
 
 a {
   border-radius: 0.5em;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 a:hover {

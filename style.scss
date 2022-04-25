@@ -34,6 +34,7 @@ nav{
 }
 a{
     border-radius: $borderradius;
+    text-decoration-line: none;
        
     &:hover{
         background-color:$success ;
