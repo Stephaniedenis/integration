@@ -3,7 +3,7 @@ $secondary: rgb(51, 53, 56);
 $success: rgb(242, 132, 14);
 // $success: darken(rgb(242, 132, 14),14%); // Lighthouse préfère cette couleur, mais pas moi. :(
 $fontsize: 1.2rem;
-$borderradius: 15px;
+$borderradius: 0.5em;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 header{
@@ -170,7 +170,7 @@ legend{
 .banniere {
     @extend .p-4, .text-center;
     @extend .d-flex, .justify-content-center, .align-items-center;
-    background-color: darken($success,14%);
+    background-color: darken($success,25%);
     background-image: url(img/maroc21.png);
     width: 100%;
     height: auto;

@@ -11978,7 +11978,7 @@ body {
 }
 
 a {
-  border-radius: 15px;
+  border-radius: 0.5em;
 }
 
 a:hover {
@@ -11987,7 +11987,7 @@ a:hover {
 
 .active {
   background-color: #f2840e;
-  border-radius: 15px;
+  border-radius: 0.5em;
 }
 
 main {
@@ -12045,7 +12045,7 @@ aside p {
 
 .alert {
   border: 5px solid #f2840e;
-  border-radius: 15px;
+  border-radius: 0.5em;
 }
 
 .alert a {
@@ -12124,7 +12124,7 @@ form .btn:hover {
 }
 
 .banniere {
-  background-color: #af5f09;
+  background-color: #7a4207;
   background-image: url(img/maroc21.png);
   width: 100%;
   height: auto;

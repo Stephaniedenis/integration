@@ -23,13 +23,10 @@
         </ol>
     </div>
     <header class="row">
-        <div class="p-5 text-center bg-image" style="background-image: url(img/maroc21.png);
-          height: 150px; ">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="text-white">
-                    <h1 class="display-5">Sara Morroco</h1>
-                    <p class="h3">Nos beldis adoptés au Québec</p>
-                </div>
+        <div class="banniere">
+            <div class="text-white">
+                <h1 class="display-6">Sara Morroco</h1>
+                <h2>Nos beldis adoptés au Québec</h2>
             </div>
         </div>
         <div class="navbar navbar-expand-lg navbar-dark bg-secondary">
@@ -48,14 +45,16 @@
                     </li>
                 </ul>
                 <form class="nav-item me-2 d-flex">
-                    <input id="rechercher" class="form-control me-2" type="search" placeholder="Rechercher" aria-label="rechercher">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" for="rechercher" value="Rechercher">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                        viewBox="0 0 16 16">
-                        <title id="rechercherTitre">Rechercher</title>
-                        <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                      </svg>
+                    <input id="rechercher" class="form-control me-2" type="search" placeholder="Rechercher"
+                        aria-label="rechercher">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" for="rechercher" value="Rechercher">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <title id="rechercherTitre">Rechercher</title>
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
                     </button>
 
                     <!-- Modal -->
@@ -98,7 +97,7 @@
         </nav>
         <div class="g-0 col-sm-9 row">
 
-            <section class="row col-md-8 col-10">
+            <section class="col-md-8 p-2">
                 <div class="alert alert-primary" role="alert">
                     <p class="alert-heading h4">Attention!</p>
                     <p>Ces informations sont sur les chiens qui ont déjà été adoptés!</p>
@@ -110,9 +109,9 @@
                 <table class="table table-hover">
                     <thead class="rayure text-success">
                         <tr>
-                            <th class="bg-secondary mt-2"rowspan="2">Nom</th>
-                            <th class="bg-secondary text-success"colspan="3">Informations</th>
-                          </tr>
+                            <th class="bg-secondary mt-2" rowspan="2">Nom</th>
+                            <th class="bg-secondary text-success" colspan="3">Informations</th>
+                        </tr>
                         <tr>
                             <th scope="col">Lieu</th>
                             <th scope="col">Âge</th>
@@ -147,11 +146,12 @@
                     </tbody>
                 </table>
             </section>
-            <aside class="col-md-2 col-10">
-                <img class="mt-5" src="img/logo.png" alt="logo du refuge">
+            <aside class="col-md-2 p-3">
+                <figure class="figure">
+                    <img src="img/logo.png" class="figure-img img-fluid rounded" alt="logo du refuge">
+                    <figcaption class="figure-caption">Logo du refuge</figcaption>
+                </figure>
             </aside>
-
-            <!--- content-->
         </div>
     </main>
 
