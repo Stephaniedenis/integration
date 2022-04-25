@@ -1,6 +1,7 @@
 $primary: white;
 $secondary: rgb(51, 53, 56);
-$success: darken(rgb(242, 132, 14),14%);
+$success: rgb(242, 132, 14);
+// $success: darken(rgb(242, 132, 14),14%); // Lighthouse préfère cette couleur, mais pas moi. :(
 $fontsize: 1.2rem;
 $borderradius: 15px;
 
@@ -152,6 +153,10 @@ legend{
          background-color: $success;
      }
  }
+}
+
+.figure-caption {
+        color:lighten($success, $amount: 25%)
 }
 
 .footer-colors {
